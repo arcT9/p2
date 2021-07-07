@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+    </head>
+    <body>
+        <br>
+        <h3 style="text-align: center;">P2 {{p2name}}'s Game Room</h3><br>
+        <div class="row">
+            <h2> Your redstones :{{redstone}} and your greenstones :{{greenstone}}</h2><br>
+            <div class="col-lg-6 offset-4">
+                <form action="/playgame", method="POST">
+                    <input type="text" name="p1name" placeholder="enter p1 name"><br>
+                    <input type="text" name="color" placeholder="red or green"><br>
+                     <input type="text" name="howmany" placeholder="remove 1 or 2"><br>
+                    <input class="btn btn-primary" type="submit" id="button" value="Remove"/>
+                </form>
+            </div>
+    </body>
+</html>
